@@ -17,10 +17,10 @@ public class Game implements Runnable {
     private static int [][] lastBoardState;
     private static int [][] nextBoardState;
 
-    Game(int size, Controller controller)
-    {
+    Game(int size, Controller controller) {
         this.size = size;
         this.controller = controller;
+        board = new int[size][size];
     }
 
     public void createGame()
